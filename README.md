@@ -1,102 +1,104 @@
-## 📂 Estrutura do Projeto
+# 🏗️ Estrutura do Projeto
 
-Este projeto está organizado em arquivos responsáveis pela interface, estilização e execução da aplicação, facilitando a manutenção e a escalabilidade do código.
-
-### 🏠 index.html
-
-Página principal da aplicação.
-
-**Responsabilidades:**
-
-* Exibir a interface inicial
-* Apresentar informações da cafeteria
-* Navegação entre páginas
-* Estrutura principal do site
+Este projeto foi organizado seguindo uma estrutura simples e modular, onde cada arquivo possui uma responsabilidade específica dentro da aplicação. Essa separação facilita o desenvolvimento, manutenção e futuras expansões do sistema.
 
 ---
 
-### 📞 contato.html
+## 🏠 index.html
 
-Página destinada ao contato com o usuário.
+Representa a porta de entrada da aplicação, sendo responsável por apresentar a interface principal ao usuário.
 
-**Responsabilidades:**
+### Responsabilidades
 
-* Exibir formulário de contato
-* Coletar informações do usuário
-* Facilitar a comunicação
-* Integrar a navegação da aplicação
-
----
-
-### 🎨 style.css
-
-Arquivo responsável pela aparência da aplicação.
-
-**Funções:**
-
-* Estilização das páginas
-* Layout responsivo
-* Cores e tipografia
-* Componentes visuais e animações
+* Construção da página inicial.
+* Exibição do conteúdo principal.
+* Navegação entre as páginas do projeto.
+* Organização da estrutura HTML.
 
 ---
 
-### ⚙️ server.js
+## 📞 contato.html
 
-Servidor da aplicação desenvolvido com Express.js.
+Responsável pela comunicação entre o usuário e a aplicação através de um formulário de contato.
 
-**Responsabilidades:**
+### Responsabilidades
 
-* Inicializar o servidor
-* Servir arquivos estáticos
-* Gerenciar rotas da aplicação
-* Disponibilizar endpoints da API
-
----
-
-### 📦 package.json
-
-Arquivo de configuração do projeto Node.js.
-
-**Contém:**
-
-* Dependências do projeto
-* Scripts de execução
-* Configurações da aplicação
-* Informações do projeto
+* Disponibilizar formulário de contato.
+* Coletar informações do usuário.
+* Manter a identidade visual da aplicação.
+* Complementar a navegação do sistema.
 
 ---
 
-### 🔒 package-lock.json
+## 🎨 style.css
 
-Arquivo gerado automaticamente pelo npm.
+Centraliza toda a camada visual do projeto, separando completamente a apresentação da estrutura HTML.
 
-**Objetivos:**
+### Responsabilidades
 
-* Controlar versões das dependências
-* Garantir instalações consistentes
-* Assegurar compatibilidade entre ambientes
-* Melhorar a estabilidade do projeto
+* Definir cores, fontes e espaçamentos.
+* Construir o layout da aplicação.
+* Aplicar responsividade.
+* Melhorar a experiência visual do usuário.
+* Padronizar todos os componentes.
 
 ---
 
-## 🔄 Organização do Projeto
+## ⚙️ server.js
+
+Núcleo responsável pelo funcionamento da aplicação no servidor utilizando Express.js.
+
+### Responsabilidades
+
+* Inicializar o servidor.
+* Disponibilizar os arquivos da aplicação.
+* Gerenciar as rotas.
+* Fornecer dados através da API.
+* Controlar o ambiente de execução.
+
+---
+
+## 📦 package.json
+
+Arquivo que define toda a configuração do projeto Node.js.
+
+### Responsabilidades
+
+* Gerenciar dependências.
+* Definir scripts de execução.
+* Configurar informações da aplicação.
+* Especificar tecnologias utilizadas.
+
+---
+
+## 🔒 package-lock.json
+
+Arquivo gerado automaticamente pelo NPM para garantir consistência entre diferentes ambientes de desenvolvimento.
+
+### Responsabilidades
+
+* Registrar versões exatas das dependências.
+* Garantir instalações reproduzíveis.
+* Evitar incompatibilidades entre bibliotecas.
+* Assegurar estabilidade durante o desenvolvimento.
+
+---
+
+# 📁 Organização Geral
 
 ```text
 Projeto
 │
-├── 📄 index.html
-├── 📄 contato.html
-├── 🎨 style.css
-├── ⚙️ server.js
-├── 📦 package.json
-└── 🔒 package-lock.json
+├── 📄 index.html        → Interface principal
+├── 📄 contato.html      → Página de contato
+├── 🎨 style.css         → Estilização da aplicação
+├── ⚙️ server.js         → Servidor Express
+├── 📦 package.json      → Configuração do projeto
+└── 🔒 package-lock.json → Controle das dependências
 ```
 
-## 🎯 Estrutura do Projeto
+---
 
-* Separação entre frontend e backend.
-* Organização clara dos arquivos.
-* Fácil manutenção e evolução.
-* Estrutura compatível com aplicações Node.js.
-* Código simples e de fácil entendimento.
+# 🎯 Objetivo da Estrutura
+
+A arquitetura foi organizada com foco na separação de responsabilidades, permitindo que cada componente desempenhe uma função específica dentro da aplicação. Essa abordagem torna o código mais limpo, reutilizável e de fácil manutenção, além de facilitar futuras implementações e a colaboração entre desenvolvedores.
